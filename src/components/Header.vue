@@ -1,10 +1,10 @@
 <template>
     <v-toolbar app>
         <!-- mr-r: margem para direita -->
-        <v-toobar-title class="headline text-uppercase mr-4">
+        <v-toolbar-title class="headline text-uppercase mr-4">
             <span>Stock</span>
             <span class="font-weight-light">Trader</span>
-        </v-toobar-title>
+        </v-toolbar-title>
 
         <v-toolbar-items>
             <v-btn flat to="/">Inicio</v-btn>
