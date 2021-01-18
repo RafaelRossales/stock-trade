@@ -16,7 +16,6 @@ export default{
             commit('buyStock',order);
         },
         initStocks({ commit }){
-            console.log('Carregando componentes')
             commit('setStocks',stocks)
         }
     },

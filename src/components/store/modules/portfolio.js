@@ -4,7 +4,7 @@ export default{
         stocks:[]
     },
     mutations:{
-        buysStock(state,{ stockId, quantity, stockPrice}){
+        buyStock(state,{ stockId, quantity, stockPrice}){
             
             const record = state.stocks.find(_element => _element.id == stockId)
 
@@ -16,7 +16,7 @@ export default{
                     quantity:quantity
                 })
             }
-            state.funds -=  stockPicce * quantity;
+            state.funds -=  stockPrice * quantity;
         },
 
         sellStock(state,{ stockId,quantity, stockPrice}){
@@ -37,13 +37,13 @@ export default{
         }
     },
     getters:{
-        stockPortfofilo(state,getters){
+        stockPortfolio(state,getters){
             return state.stocks.map(stock=>{
-                const record = getters.stocks.find(element =>element.id == stock.id)
+                const record = getters.stocks.find(element => element.id == stock.id)
                 return{
                     id:stock.id,
                     quantity:stock.quantity,
-                    name:register.name,
+                    name:record.name,
                     price:record.price
                 }
             })

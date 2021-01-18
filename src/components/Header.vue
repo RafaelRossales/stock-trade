@@ -8,7 +8,7 @@
 
         <v-toolbar-items>
             <v-btn flat to="/">Inicio</v-btn>
-            <v-btn flat to="/portifolio">Portifolio</v-btn>
+            <v-btn flat to="/portfolio">Portifolio</v-btn>
             <v-btn flat to="/stocks">Ações</v-btn>
         </v-toolbar-items>
 
