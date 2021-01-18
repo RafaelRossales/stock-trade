@@ -44,13 +44,11 @@ export default {
     ...mapActions({sellStockAction:'sellStock'}),
 
     sellStock(){
-      console.log('Sell')
       const order ={
         stockId: this.stock.id,
         stockPrice:this.stock.price,
         quantity:this.quantity
       }
-            console.log('Sell2')
       this.sellStockAction(order);
       // this.$store.dispatch('sellStock',order)
       this.quantity = 0;
